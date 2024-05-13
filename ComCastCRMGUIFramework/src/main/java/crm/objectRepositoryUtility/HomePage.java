@@ -23,6 +23,9 @@ public class HomePage {
 	@FindBy(linkText ="Campaigns")
 	private WebElement campaignLink;
 	
+	@FindBy(linkText="Products")
+	private WebElement productLink;
+
 	@FindBy(linkText ="More")
 	private WebElement moreLink;
 	
@@ -36,6 +39,10 @@ public class HomePage {
 
 	public WebElement getCampaignLink() {
 		return campaignLink;
+	}
+	
+	public WebElement getProductLink() {
+		return productLink;
 	}
 	
 	public WebElement getMoreLink() {
