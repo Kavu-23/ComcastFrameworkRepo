@@ -5,13 +5,13 @@
     <classes>
       <class name="crm.ContactTest.createContactWith3ScrptsTest">
         <methods>
-          <include name="createContactTest"/>
           <include name="conFigAM"/>
           <include name="conFigBM"/>
           <include name="conFigAC"/>
           <include name="conFigAS"/>
           <include name="conFigBC"/>
           <include name="conFigBS"/>
+          <include name="createContactWithOrgNameTest"/>
         </methods>
       </class> <!-- crm.ContactTest.createContactWith3ScrptsTest -->
     </classes>

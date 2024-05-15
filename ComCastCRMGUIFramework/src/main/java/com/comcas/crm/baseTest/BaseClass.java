@@ -49,7 +49,7 @@ public class BaseClass {
 
 	public void conFigBC() throws Throwable {
 		System.out.println("====Launch Browser=====");
-		String Browser =fLib.getDataFromPropertiesFile("browser");
+		String Browser =System.getProperty("browser", fLib.getDataFromPropertiesFile("browser"));
 
 		if (Browser.equals("edge")) {
 			driver = new EdgeDriver();
@@ -67,9 +67,9 @@ public class BaseClass {
 	@BeforeMethod(groups = { "smokeTest", "regressionTest" })
 	public void conFigBM() throws Throwable {
 		System.out.println("===Login to App===");
-		String Url = fLib.getDataFromPropertiesFile("url");
-		String Username = fLib.getDataFromPropertiesFile("username");
-		String Password = fLib.getDataFromPropertiesFile("password");
+		String Url =System.getProperty("url",fLib.getDataFromPropertiesFile("url"));
+		String Username =System.getProperty("username", fLib.getDataFromPropertiesFile("username"));
+		String Password =System.getProperty("password", fLib.getDataFromPropertiesFile("password"));
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(Url, Username, Password);
 	}
