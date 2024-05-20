@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.comcas.crm.baseTest.BaseClass;
-import com.comcas.crm.baseTest.BaseClass2;
 
 import crm.generic.webDriverUtility.UtilityClassObject;
 
